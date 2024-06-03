@@ -425,7 +425,7 @@ a.tag {
   border: solid var(--green-light);
   ;
   border-width: 0px 0px 0px 3px;
-  background-color: #121212;
+  background-color: var(--background-secondary-alt);
   color: var(--green-light);
   font-style: italic;
 }
