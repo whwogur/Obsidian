@@ -69,7 +69,9 @@ body .modal {
   --text-title-h4: #FFA500;
   --text-title-h5: #9370DB;
   --text-title-h6: #719bf7;
+
   --text-strong: #fff;
+  --text-code: #f8e7a4;
 
   --font-weight-title: 600;
   --font-monospace: "JetBrains Mono", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid", "Arial", sans-serif;
@@ -145,7 +147,10 @@ body .modal {
   --text-title-h4: #289aff;
   --text-title-h5: #4ad185;
   --text-title-h6: #bb77f0;
+
   --text-strong: #757575;
+  --text-code: #0fb3ff;
+
 
   --font-weight-title: 600;
   --font-monospace: "JetBrains Mono", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid", "Arial", sans-serif;
@@ -494,7 +499,7 @@ strong {
 
 
 .markdown-rendered code {
-  color: var(--cyan);
+  color: var(--text-code);
 }
 
 
