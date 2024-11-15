@@ -623,12 +623,12 @@ input[type=checkbox]:checked::after {
   --code-background: var(--setting-code-bg, var(--md-container-bg));
   --code-function: var(--color-orange);
   --code-important: var(--color-purple);
-  --code-keyword: var(--color-purple);
+  --code-keyword: var(--color-yellow);
   --code-property: var(--color-orange);
   --code-punctuation: var(--color-blue);
   --code-string: var(--color-green);
   --code-tag: var(--color-red);
-  --code-value: var(--color-orange);
+  --code-value: var(--color-blue);
   --code-comment: var(--text-faint);
   --code-normal: var(--code-preview-base);
   --code-bg-radius: var(--radius-m);
