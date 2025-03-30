@@ -4892,7 +4892,7 @@ a:hover,
     font-family: var(--font-header);
     font-weight: 700;
 
-    color: #53DFDD;
+    color: var(--color-base-70);
 
     text-decoration-line: underline;
     text-decoration-skip-ink: all;
@@ -4903,7 +4903,7 @@ a:hover,
 a,
 .markdown-rendered .internal-link.is-unresolved,
 .markdown-rendered .internal-link {
-    color: #53DFDD;
+    color: var(--color-base-70);
     text-decoration-line: none;
 }
 
