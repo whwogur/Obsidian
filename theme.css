@@ -1511,9 +1511,9 @@ body {
 	*/
 
     /* Accent HSL values */
-    --accent-h: 254;
-    --accent-s: 80%;
-    --accent-l: 68%;
+    --accent-h: 48;
+    --accent-s: 100%;
+    --accent-l: 50%;
 
     /* Backgrounds 
 	*/
