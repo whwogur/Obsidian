@@ -786,10 +786,24 @@ settings:
 }
 
 @font-face{
-   	font-family:'DNFForgedBlade';
+   	font-family:'DNFForgedBlade_1';
 	font-style:normal;
 	font-weight:700;
-   src:url('//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Bold.otf')format('opentype')
+   	src:url('//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Bold.otf')format('opentype')
+}
+
+@font-face{
+   	font-family:'DNFForgedBlade_2';
+	font-style:normal;
+	font-weight:500;
+   	src:url('//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Medium.otf')format('opentype')
+}
+
+@font-face{
+	font-family:'DNFForgedBlade_3';
+	font-style:normal;
+	font-weight:300;
+   	src:url('//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Light.otf')format('opentype')
 }
 
 /* Nightingale
@@ -3573,10 +3587,10 @@ body {
     --font-text-theme: "Satoshi", sans-serif;
     --font-monospace: "Monaspace", monospace; */
 
-	--ulu-font-title: "DNFForgedBlade";
-	--ulu-font-general:"Satoshi", sans-serif;
+	--ulu-font-title: "DNFForgedBlade_1";
+	--ulu-font-general: "DNFForgedBlade_3", sans-serif;
 	--font-title: var(--ulu-font-title);
-	--font-interface-theme: "Satoshi", sans-serif;
+	--font-interface-theme: "DNFForgedBlade_2", sans-serif;
 	--font-text-theme: var(--ulu-font-general);
 	--font-mono: "Monaspace", monospace;
 
