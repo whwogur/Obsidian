@@ -2,6 +2,7 @@
 /* imports
 */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 @font-face{
    	font-family:'DNFForgedBlade_1';
@@ -25,7 +26,6 @@
 }
 
 body {
-
     /* Animations 
 	*/
     --anim-duration-none: 0;
@@ -114,10 +114,6 @@ body {
     --code-white-space: pre-wrap;
     --code-size: var(--font-smaller);
     --code-background: var(--background-primary-alt);
-    --code-normal: var(--text-muted);
-    --code-important: var(--color-orange);
-    --code-punctuation: var(--text-muted);
-    --code-tag: var(--color-red);
 
     /* Collapse icons 
 	*/
@@ -611,11 +607,14 @@ body {
 
     /* Color mappings ------------------------ 
 	*/
-
-    /* Accent HSL values */
-    --accent-h: 48;
-    --accent-s: 100%;
+    --accent-h: 220;
+    --accent-s: 70%;
     --accent-l: 50%;
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)); /* #2B6CB0 */
+    --color-accent-hover: hsl(var(--accent-h), var(--accent-s), 60%); /* #4A90E2 */
+    --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --interactive-accent: var(--color-accent);
+    --interactive-accent-hover: var(--color-accent-hover);
 
     /* Backgrounds 
 	*/
@@ -806,21 +805,21 @@ body {
 
     /* Links
 	*/
-    --link-color: #6495ED;
-    --link-color-hover: #9eb9ec;
+    --link-color: var(--color-accent); /* #2B6CB0 */
+    --link-color-hover: var(--color-accent-hover); /* #4A90E2 */
     --link-decoration: underline;
-    --link-decoration-hover: none;
-    --link-decoration-thickness: 13%;
-    --link-external-color: #6495ED;
-    --link-external-color-hover: #9eb9ec;
-    --link-external-decoration: none;
-    --link-external-decoration-hover: none;
+    --link-decoration-hover: underline;
+    --link-decoration-thickness: auto;
+    --link-external-color: var(--color-accent); /* #2B6CB0 */
+    --link-external-color-hover: var(--color-accent-hover); /* #4A90E2 */
+    --link-external-decoration: underline;
+    --link-external-decoration-hover: underline;
     --link-external-filter: none;
-    --link-unresolved-color: var(--text-muted);
+    --link-unresolved-color: var(--color-accent); /* #2B6CB0 */
     --link-unresolved-opacity: 0.7;
     --link-unresolved-filter: none;
     --link-unresolved-decoration-style: solid;
-    --link-unresolved-decoration-color: transparent;
+    --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3); /* Semi-transparent #2B6CB0 */
 
     /* Text
 	*/
@@ -846,7 +845,9 @@ body {
 .cm-s-obsidian pre.HyperMD-codeblock,
 .cm-s-obsidian code,
 .cm-s-obsidian .HyperMD-codeblock {
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Source Code Pro", monospace;
+    font-size: 0.875em;
+    line-height: 1.6;
 }
 
 /* CUSTOM CSS
