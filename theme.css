@@ -2110,7 +2110,7 @@ a,
 .markdown-rendered .internal-link.is-unresolved,
 .markdown-rendered .internal-link {
     color: var(--color-base-70);
-    text-decoration-line: none;
+    text-decoration-line: underline;
 }
 
 a,
